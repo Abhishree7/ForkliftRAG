@@ -1,0 +1,37 @@
+# FastAPI and Server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic>=2.8.0,<3.0.0
+pydantic-settings>=2.3.0
+
+# Document Processing
+llama-parse>=0.5.0
+python-docx==1.1.0
+
+# Search and Indexing
+qdrant-client==1.7.0
+sentence-transformers>=2.7.0
+numpy>=1.26.0,<2.0.0
+safetensors>=0.4.0
+
+# LLM Integration
+anthropic==0.34.2
+
+# Caching
+redis==5.0.1
+hiredis==2.2.3
+
+# Utilities
+python-multipart==0.0.6
+pyyaml==6.0.1
+python-json-logger==2.0.7
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Note: torch 2.6+ is unavailable for Intel Mac (x86_64). sentence-transformers
+# loads BAAI/bge-m3 via HuggingFace AutoModel (safetensors-aware), so torch.load
+# is not invoked and the CVE-2025-32434 restriction does not apply.
+torch>=2.2.2

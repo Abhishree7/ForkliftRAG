@@ -1,0 +1,16 @@
+# Documents
+AI & Robotics - UNIS Documentation.pdf
+AI & Robotics - UNIS Documentation.docx
+Automated Forklift SOP - UNIS.pdf
+
+# Scripts & generated output
+ingest_document.py
+pdf_content.txt
+
+# Uploaded documents storage
+documents/
+
+# Internal documentation
+QUICK_START.md
+SYSTEM_DESIGN.md
+User_Documentation.md

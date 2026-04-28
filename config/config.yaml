@@ -1,0 +1,54 @@
+# Qdrant Configuration
+qdrant:
+  host: "localhost"
+  port: 6333
+  collection_name: "logistics_documents"
+  timeout: 30
+
+# Groq Configuration
+groq:
+  api_key: "${GROQ_API_KEY}"
+  model: "llama-3.3-70b-versatile"
+  temperature: 0.3
+  max_tokens: 500
+  timeout: 60
+
+# BGE-M3 Embedding Configuration
+semantic_search:
+  model_name: "BAAI/bge-large-en-v1.5"
+  device: "cpu"  # or "cuda" if GPU available
+  batch_size: 32
+
+# Redis Configuration
+redis:
+  host: "localhost"
+  port: 6379
+  db: 0
+  ttl: 3600  # Cache TTL in seconds (1 hour)
+  password: "${REDIS_PASSWORD}"  # Optional
+
+# LlamaParse Configuration
+llama_parse:
+  api_key: "${LLAMA_PARSE_API_KEY}"
+  result_type: "markdown"
+  verbose: true
+
+# Document Storage
+storage:
+  type: "local"  # or "s3", "gcs"
+  base_path: "./documents"
+  supported_formats: ["pdf", "docx", "txt"]
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  timeout: 300
+  max_request_size: 10485760  # 10MB
+
+# Logging
+logging:
+  level: "INFO"
+  format: "json"
+  file: "logs/rag_system.log"
