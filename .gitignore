@@ -14,3 +14,21 @@ documents/
 QUICK_START.md
 SYSTEM_DESIGN.md
 User_Documentation.md
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+*.env
+
+# macOS
+.DS_Store
