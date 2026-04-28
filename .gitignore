@@ -32,3 +32,9 @@ logs/
 
 # macOS
 .DS_Store
+
+# Tests
+tests/
+
+# Submodule directory
+ForkliftRAG/
